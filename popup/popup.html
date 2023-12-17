@@ -13,15 +13,16 @@
     <main>
         <section id="navigation">
             <div class="links">
-                <a href="#home" class="nav-link selected">Home</a>
+                <a href="#home" class="nav-link">Home</a>
                 <a href="#auth" class="nav-link">Authentication</a>
-                <a href="#compose" class="nav-link">Compose</a>
+                <a href="#compose" class="nav-link selected">Compose</a>
             </div>
         </section>
-        <section class="content">
+        <section id="content">
             <div id="home">
                 <h2 class="heading">Welcome to MailScribe!</h2>
-                <p>Mailscribe is your hassle-free solution for swift and effortless email composition! Tired of the tedious process of logging into Gmail and navigating to the compose section every time you need to send a crucial email? Mailscribe is here to simplify your workflow. With this browser extension, you can effortlessly compose and send important emails directly without the need for repetitive logins and clicks.You can find more about the developer and explore the project on <a href="https://github.com/alexindevs/MailScribe">GitHub</a>. Upgrade your email experience with Mailscribe today!</p>
+                <p>Mailscribe is your hassle-free solution for swift and effortless email composition! Tired of the tedious process of logging into Gmail and navigating to the compose section every time you need to send a crucial email? Mailscribe is here to simplify your workflow. With this browser extension, you can effortlessly compose and send important emails directly without the need for repetitive logins and clicks. </p> 
+                <br><p>You can find more about the developer and explore the project on <a href="https://github.com/alexindevs/MailScribe">GitHub</a>. Upgrade your email experience with Mailscribe today!</p>
             </div>
             <div id="auth">
                 <button class="signin">Sign In with Google</button>
@@ -29,15 +30,25 @@
             </div>
             <div id="compose">
                 <form action="" method="post">
-                    <label for="recipient">Recipient:</label>
-                    <input type="email" name="recipient" id="recipient" placeholder="Enter email address">
-                    <label for="subject">Subject:</label>
-                    <input type="text" name="subject" id="subject" placeholder="Enter subject">
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message"></textarea>
-                    <label for="attachment">Attachment:</label>
-                    <input type="file" name="attachment" id="attachment">
-                    <button type="submit" name="submit">Send</button>
+                    <div class="group">
+                        <label for="recipient">Recipient:</label>
+                        <input type="email" name="recipient" id="recipient" placeholder="Enter email address">
+                    </div>
+                    <div class="group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" name="subject" id="subject" placeholder="Enter subject">
+                    </div>
+                    <div class="group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message"></textarea>
+                    </div>
+                    <div class="group">
+                        <label for="attachment">Attachment:</label>
+                        <input type="file" name="attachment" id="attachment">
+                    </div>
+                    <div class="group">
+                        <button type="submit" name="submit">Send</button>
+                    </div>                    
                 </form>
             </div>
         </section>
