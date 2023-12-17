@@ -27,4 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
         this.classList.add("selected");
       });
     });
+
+    const sendButton = document.getElementById("send-button");
+    sendButton.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        // Add email sending logic here
+        // Figure out how to get the recipient, message and subject from the form
+        // Pass this to background script
+        alert("Email sent successfully!");  
+    })
   });

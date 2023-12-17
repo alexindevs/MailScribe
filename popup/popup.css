@@ -195,4 +195,6 @@ main #navigation .links .nav-link {
 
 
 
-   
+.successful {
+    display: none;
+}
