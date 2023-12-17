@@ -8,8 +8,8 @@
 
 body {
     background-color: white;
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 550px;
     font-weight: 400;
     justify-content: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -143,7 +143,7 @@ main #navigation .links .nav-link {
     border: none;
     cursor: pointer;
   }  
-  main #content #home, main #content #auth {
+  main #content #compose, main #content #auth {
     display: none; 
   }
 

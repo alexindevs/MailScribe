@@ -6,26 +6,25 @@
     "action": {
       "default_popup": "popup/popup.html",
       "default_icon": {
-        "16": "images/icon16.png",
-        "48": "images/icon48.png",
-        "128": "images/icon128.png"
+        "16": "images/favicon-16x16.png",
+        "48": "images/favicon-48.png",
+        "128": "images/favicon-128.png"
       }
     },
     "permissions": [
-      "https://mail.google.com/",
       "storage"
     ],
     "icons": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
+      "16": "images/favicon-16x16.png",
+      "48": "images/favicon-48.png",
+      "128": "images/favicon-128.png"
     },
     "background": {
       "service_worker": "background/background.js"
     },
     "content_scripts": [
       {
-        "matches": ["https://mail.google.com/*"],
+        "matches": ["<all_urls>"],
         "js": ["content/content.js"]
       }
     ]
